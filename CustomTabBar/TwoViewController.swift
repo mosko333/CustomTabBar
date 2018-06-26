@@ -18,7 +18,6 @@ class TwoViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        self.view.backgroundColor = .red
     }
     
 

@@ -25,6 +25,7 @@ class CustomTabBarView: UIView {
     
     
     @IBAction func tapBarButtonPressed(_ sender: UIButton) {
+        print(sender.tag)
         delegte?.tabBarViewChangedSelectedIndex(at: sender.tag)
     }
     
