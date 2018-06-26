@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		7E9EE92720E1920000F1CD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE92620E1920000F1CD79 /* AppDelegate.swift */; };
-		7E9EE92920E1920000F1CD79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE92820E1920000F1CD79 /* ViewController.swift */; };
 		7E9EE92C20E1920000F1CD79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9EE92A20E1920000F1CD79 /* Main.storyboard */; };
 		7E9EE92E20E1920100F1CD79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E9EE92D20E1920100F1CD79 /* Assets.xcassets */; };
 		7E9EE93120E1920100F1CD79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E9EE92F20E1920100F1CD79 /* LaunchScreen.storyboard */; };
+		7E9EE93D20E1A91900F1CD79 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE93C20E1A91900F1CD79 /* CustomTabBarViewController.swift */; };
+		7E9EE93F20E1AAE600F1CD79 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE93E20E1AAE600F1CD79 /* CustomTabBarView.swift */; };
+		7E9EE94220E1C70200F1CD79 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE94120E1C70200F1CD79 /* OneViewController.swift */; };
+		7E9EE94420E1EA1300F1CD79 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE94320E1EA1300F1CD79 /* TwoViewController.swift */; };
+		7E9EE94620E1EA2100F1CD79 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE94520E1EA2100F1CD79 /* ThreeViewController.swift */; };
+		7E9EE94820E1EA3100F1CD79 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE94720E1EA3100F1CD79 /* FourViewController.swift */; };
+		7E9EE94A20E1EB8F00F1CD79 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9EE94920E1EB8F00F1CD79 /* FiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E9EE92320E1920000F1CD79 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9EE92620E1920000F1CD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E9EE92820E1920000F1CD79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E9EE92B20E1920000F1CD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E9EE92D20E1920100F1CD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E9EE93020E1920100F1CD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E9EE93220E1920100F1CD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9EE93C20E1A91900F1CD79 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		7E9EE93E20E1AAE600F1CD79 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		7E9EE94120E1C70200F1CD79 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		7E9EE94320E1EA1300F1CD79 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		7E9EE94520E1EA2100F1CD79 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		7E9EE94720E1EA3100F1CD79 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		7E9EE94920E1EB8F00F1CD79 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				7E9EE92620E1920000F1CD79 /* AppDelegate.swift */,
-				7E9EE92820E1920000F1CD79 /* ViewController.swift */,
-				7E9EE92A20E1920000F1CD79 /* Main.storyboard */,
 				7E9EE92D20E1920100F1CD79 /* Assets.xcassets */,
 				7E9EE92F20E1920100F1CD79 /* LaunchScreen.storyboard */,
 				7E9EE93220E1920100F1CD79 /* Info.plist */,
+				7E9EE92A20E1920000F1CD79 /* Main.storyboard */,
+				7E9EE93C20E1A91900F1CD79 /* CustomTabBarViewController.swift */,
+				7E9EE93E20E1AAE600F1CD79 /* CustomTabBarView.swift */,
+				7E9EE94120E1C70200F1CD79 /* OneViewController.swift */,
+				7E9EE94320E1EA1300F1CD79 /* TwoViewController.swift */,
+				7E9EE94520E1EA2100F1CD79 /* ThreeViewController.swift */,
+				7E9EE94720E1EA3100F1CD79 /* FourViewController.swift */,
+				7E9EE94920E1EB8F00F1CD79 /* FiveViewController.swift */,
 			);
 			path = CustomTabBar;
 			sourceTree = "<group>";
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E9EE92920E1920000F1CD79 /* ViewController.swift in Sources */,
+				7E9EE94620E1EA2100F1CD79 /* ThreeViewController.swift in Sources */,
+				7E9EE94220E1C70200F1CD79 /* OneViewController.swift in Sources */,
+				7E9EE93D20E1A91900F1CD79 /* CustomTabBarViewController.swift in Sources */,
 				7E9EE92720E1920000F1CD79 /* AppDelegate.swift in Sources */,
+				7E9EE93F20E1AAE600F1CD79 /* CustomTabBarView.swift in Sources */,
+				7E9EE94820E1EA3100F1CD79 /* FourViewController.swift in Sources */,
+				7E9EE94A20E1EB8F00F1CD79 /* FiveViewController.swift in Sources */,
+				7E9EE94420E1EA1300F1CD79 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
