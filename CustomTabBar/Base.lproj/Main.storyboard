@@ -17,7 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="jMp-FX-3WB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.93443674700000001" blue="0.6727592295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="D4N-Mp-kni"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Cpu-qt-o5G"/>
@@ -89,8 +89,18 @@
                                     <constraint firstAttribute="height" constant="20" id="WtY-9f-oid"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ta-oW-1zp" userLabel="SquareShadow">
+                                <rect key="frame" x="87" y="334" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmF-dt-KXA" userLabel="RoundShadow">
+                                <rect key="frame" x="128" y="232" width="118" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.54233995005050972" green="0.37786987578453257" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.8273984486" green="0.88058843990000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="szi-N4-wx8" firstAttribute="leading" secondItem="DP9-6F-2lv" secondAttribute="leading" id="8IZ-mm-CLP"/>
                             <constraint firstItem="DP9-6F-2lv" firstAttribute="trailing" secondItem="szi-N4-wx8" secondAttribute="trailing" id="Wuc-Jb-zFA"/>
@@ -102,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMG-in-q5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="-824"/>
+            <point key="canvasLocation" x="1338.4000000000001" y="-824.43778110944538"/>
         </scene>
         <!--Custom Tab Bar View Controller-->
         <scene sceneID="EhQ-iL-gmz">
@@ -129,7 +139,20 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ca5-Ir-ytt" userLabel="BigView">
                             <rect key="frame" x="0.0" y="10" width="376" height="94"/>
-                            <color key="backgroundColor" red="0.8273984486" green="0.88058843990000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EvY-Xb-yne" userLabel="BackCircleView">
+                            <rect key="frame" x="143" y="-30" width="90" height="90"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="Aeh-gk-EvG"/>
+                                <constraint firstAttribute="width" constant="90" id="ptE-VZ-yMw"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="45"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3d-Se-Uof">
                             <rect key="frame" x="0.0" y="10" width="376" height="50"/>
@@ -154,7 +177,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.67450980392156867" green="1" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="90" id="8EN-ad-aRh"/>
                                         <constraint firstAttribute="height" constant="90" id="Hm8-OZ-bQP"/>
@@ -167,43 +190,91 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUd-wN-Y67">
-                                    <rect key="frame" x="234" y="-2" width="54" height="54"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="xcaSearch"/>
-                                    <connections>
-                                        <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="7cZ-ok-WaS"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5I-03-gd6">
-                                    <rect key="frame" x="8" y="-5" width="59.5" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="xcaHouse"/>
-                                    <connections>
-                                        <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="o98-Nr-hFR"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSF-Zo-jd5">
-                                    <rect key="frame" x="70" y="-6.5" width="63" height="63"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="xcaHeart"/>
-                                    <connections>
-                                        <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="7fa-XA-Cnp"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-7V-Ptv">
-                                    <rect key="frame" x="306" y="-2" width="54" height="54"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="xcaUser"/>
-                                    <connections>
-                                        <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="TNX-3D-7jo"/>
-                                    </connections>
-                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lDh-0i-zPL">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="50"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qq5-CN-tTG" userLabel="L1View">
+                                            <rect key="frame" x="0.0" y="0.0" width="37.5" height="50"/>
+                                            <color key="backgroundColor" red="0.210382297" green="0.210382297" blue="0.210382297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5I-03-gd6">
+                                            <rect key="frame" x="37.5" y="10" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="QwC-9F-AVn"/>
+                                                <constraint firstAttribute="height" constant="30" id="pNw-42-Jzu"/>
+                                            </constraints>
+                                            <state key="normal" image="xcaHouse"/>
+                                            <connections>
+                                                <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="o98-Nr-hFR"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MFC-mg-Bhv" userLabel="L2View">
+                                            <rect key="frame" x="67.5" y="0.0" width="38" height="50"/>
+                                            <color key="backgroundColor" red="0.210382297" green="0.210382297" blue="0.210382297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSF-Zo-jd5">
+                                            <rect key="frame" x="105.5" y="10" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="X3m-ai-sl6"/>
+                                                <constraint firstAttribute="width" constant="30" id="ozK-Ay-pvD"/>
+                                            </constraints>
+                                            <state key="normal" image="xcaHeart"/>
+                                            <connections>
+                                                <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="7fa-XA-Cnp"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eo-9J-rVb" userLabel="L3View">
+                                            <rect key="frame" x="135.5" y="0.0" width="37.5" height="50"/>
+                                            <color key="backgroundColor" red="0.210382297" green="0.210382297" blue="0.210382297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfy-RA-c2z" userLabel="MidSpace">
+                                            <rect key="frame" x="173" y="0.0" width="50" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v5E-1T-sak" userLabel="R3View">
+                                            <rect key="frame" x="223" y="0.0" width="17.5" height="50"/>
+                                            <color key="backgroundColor" red="0.210382297" green="0.210382297" blue="0.210382297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUd-wN-Y67">
+                                            <rect key="frame" x="240.5" y="10" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="8Ld-Bn-ZTp"/>
+                                                <constraint firstAttribute="width" constant="30" id="B3g-5E-DsN"/>
+                                            </constraints>
+                                            <state key="normal" image="xcaSearch"/>
+                                            <connections>
+                                                <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="7cZ-ok-WaS"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frh-eL-o2a" userLabel="L2View">
+                                            <rect key="frame" x="270.5" y="0.0" width="38" height="50"/>
+                                            <color key="backgroundColor" red="0.210382297" green="0.210382297" blue="0.210382297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-7V-Ptv">
+                                            <rect key="frame" x="308.5" y="10" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="lZq-Eb-zPj"/>
+                                                <constraint firstAttribute="width" constant="30" id="u1P-Zq-udS"/>
+                                            </constraints>
+                                            <state key="normal" image="xcaUser"/>
+                                            <connections>
+                                                <action selector="tapBarButtonPressed:" destination="vQp-LF-F4a" eventType="touchUpInside" id="TNX-3D-7jo"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="55r-HR-3WB" userLabel="R1View">
+                                            <rect key="frame" x="338.5" y="0.0" width="37.5" height="50"/>
+                                            <color key="backgroundColor" red="0.21038229695431476" green="0.21038229695431476" blue="0.21038229695431476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </subviews>
+                                </stackView>
                             </subviews>
-                            <color key="backgroundColor" red="0.66544974400000001" green="1" blue="0.1262501972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
+                                <constraint firstItem="lDh-0i-zPL" firstAttribute="centerY" secondItem="a3d-Se-Uof" secondAttribute="centerY" id="5Vw-8o-V5Y"/>
+                                <constraint firstAttribute="trailing" secondItem="lDh-0i-zPL" secondAttribute="trailing" id="GWq-Ga-0o0"/>
                                 <constraint firstAttribute="bottom" secondItem="Swp-ru-Mcb" secondAttribute="bottom" id="ozY-Kt-Mnf"/>
                                 <constraint firstItem="Swp-ru-Mcb" firstAttribute="centerX" secondItem="a3d-Se-Uof" secondAttribute="centerX" id="xj8-7N-Yyc"/>
+                                <constraint firstItem="lDh-0i-zPL" firstAttribute="leading" secondItem="a3d-Se-Uof" secondAttribute="leading" id="ylN-Si-HKI"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -216,14 +287,18 @@
                         <constraint firstItem="ca5-Ir-ytt" firstAttribute="trailing" secondItem="eTH-K6-86c" secondAttribute="trailing" id="WNw-cO-hdm"/>
                         <constraint firstItem="eTH-K6-86c" firstAttribute="trailing" secondItem="a3d-Se-Uof" secondAttribute="trailing" id="Wg7-Rg-XTG"/>
                         <constraint firstItem="ca5-Ir-ytt" firstAttribute="leading" secondItem="eTH-K6-86c" secondAttribute="leading" id="iv0-4w-n8U"/>
+                        <constraint firstItem="EvY-Xb-yne" firstAttribute="bottom" secondItem="Swp-ru-Mcb" secondAttribute="bottom" id="nKZ-T8-5R2"/>
+                        <constraint firstItem="EvY-Xb-yne" firstAttribute="centerX" secondItem="vQp-LF-F4a" secondAttribute="centerX" id="rbU-Ll-bAK"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="eTH-K6-86c"/>
                     <connections>
+                        <outlet property="backCircleView" destination="EvY-Xb-yne" id="GbV-rM-F9U"/>
                         <outlet property="button1" destination="s4Y-7V-Ptv" id="5oK-0v-8bH"/>
                         <outlet property="button2" destination="eSF-Zo-jd5" id="b9x-Bf-Yts"/>
                         <outlet property="button3" destination="xg5-Qh-VOE" id="fJq-Ey-SPv"/>
                         <outlet property="button4" destination="qUd-wN-Y67" id="FbU-w4-Gwb"/>
                         <outlet property="button5" destination="K5I-03-gd6" id="AwW-ne-0JJ"/>
+                        <outlet property="tabViewBackgroundView" destination="a3d-Se-Uof" id="9eJ-DJ-9mC"/>
                     </connections>
                 </view>
             </objects>

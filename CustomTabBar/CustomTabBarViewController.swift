@@ -24,6 +24,7 @@ class CustomTabBarViewController: UITabBarController, CustomTabBarViewDelegate{
         tabView.translatesAutoresizingMaskIntoConstraints = false
         tabView.delegte = self
         selectedIndex = 0
+        tabView.addShadow()
         view.addSubview(tabView)
         
         let leadingConstraint = tabView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
